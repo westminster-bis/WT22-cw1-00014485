@@ -7,12 +7,272 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/media.css">
+    <script src="https://kit.fontawesome.com/70b4046f70.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
+<header class="header">
+    <div class="header__content container">
         <a href="">
-            <img src="" alt="">
+            <img src="img/logo.png" alt="logo" height="80px">
         </a>
-    </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About us</a>
+                </li>
+                <li>
+                    <a href="">Contacts</a>
+                </li>
+                <li>
+                    <a href="">Sneakers</a>
+                </li>
+                <li>
+                    <a href="">Clothes</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Search...">
+            <a href="">
+                CART
+            </a>
+        </div>
+    </div>
+</header>
+<section class="image-section container">
+    <div class="left">
+        <a class="image-h1" href="#">Sneakers</a>
+        <img src="img/header1.jpg" height="100%" width="100%" alt="">
+
+    </div>
+    <div class="right">
+        <a class="image-h1" href="#">Clothes</a>
+        <img src="img/header2.jpg" height="100%" width="100%" alt="">
+    </div>
+</section>
+<section class="products container">
+    <aside class="filters">
+        <h2>Filters</h2>
+        <h4>Brand</h4>
+        <ul>
+            <li>
+                <input type="checkbox" id="product1" name="product1" value="Nike">
+                <label for="product1"> Nike</label><br>
+            </li>
+            <li>
+                <input type="checkbox" id="product2" name="product1" value="Nike">
+                <label for="product2"> Adidas</label><br>
+            </li>
+            <li>
+                <input type="checkbox" id="product3" name="product1" value="Nike">
+                <label for="product3"> Timberland</label><br>
+            </li>
+            <li>
+                <input type="checkbox" id="product4" name="product1" value="Nike">
+                <label for="product4"> Vans</label><br>
+            </li>
+            <li>
+                <input type="checkbox" id="product5" name="product1" value="Nike">
+                <label for="product5"> New Balance</label><br>
+            </li>
+        </ul>
+        <h4>Clothes</h4>
+        <ul>
+            <li>
+                <input type="checkbox" id="clothes1" name="product1" value="Nike">
+                <label for="product1"> Bomber</label><br>
+            </li>
+            <li>
+                <input type="checkbox" id="clothes2" name="product1" value="Nike">
+                <label for="product2"> Hoodie</label><br>
+            </li>
+            <li>
+                <input type="checkbox" id="clothes3" name="product1" value="Nike">
+                <label for="product3"> Jeans</label><br>
+            </li>
+            <li>
+                <input type="checkbox" id="clothes4" name="product1" value="Nike">
+                <label for="product4"> Caps</label><br>
+            </li>
+            <li>
+                <input type="checkbox" id="clothes5" name="product1" value="Nike">
+                <label for="product5"> New Balance</label><br>
+            </li>
+        </ul>
+    </aside>
+    <div class="products-side">
+        <div class="product-title">
+            <h2>
+                Sneakers
+            </h2>
+            <div class="select-div">
+                <h4>Sort by: </h4>
+                <select name="product" id="product-select">
+                    <option value="date">Date</option>
+                    <option value="price">Price</option>
+                    <option value="price-reverse">Price reverse</option>
+                    <option value="popular">Popular</option>
+                </select>
+            </div>
+
+        </div>
+
+
+        <div class="product-list">
+            <div class="card">
+                <img src="img/product1.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/product2.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/product3.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/product4.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/product5.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/product6.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/product7.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/product8.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/product9.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>Vans</b></h4>
+                    <p>50$</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/clothes3.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+        </div>
+        <h2>Clothes</h2>
+        <div class="product-list">
+            <div class="card2">
+                <img src="img/clothes1.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card2">
+                <img src="img/clothes2.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <img src="img/clothes4.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card2">
+                <img src="img/clothes5.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card2">
+                <img src="img/clothes6.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card2">
+                <img src="img/clothes7.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+            <div class="card2">
+                <img src="img/clothes8.jpg" alt="Avatar" style="width:100%">
+                <div class="card-text">
+                    <h4><b>John Doe</b></h4>
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__content container">
+        <a href="">
+            <img src="img/logo.png" alt="" height="225px">
+        </a>
+        <div class="footer_links">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contacts</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="">Sneakers</a></li>
+                <li><a href="">Clothes</a></li>
+            </ul>
+            <ul>
+                <p>Kink в соц-сетях</p>
+                <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                <li><a href=""><i class="fa-brands fa-telegram"></i>Telegram</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
