@@ -10,3 +10,5 @@ It consists of 6 pages:
     6-Cart page, where goods for the order will be available in the future.
     
 There are 4 directories in the project folder: img for images, style for css styles, js for JavaScript documents and fonts for the fonts that were used in the project
+
+Link for github pages: https://westminster-bis.github.io/WT22-cw1-00014485/clothes.html
