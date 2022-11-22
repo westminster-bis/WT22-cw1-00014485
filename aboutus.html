@@ -13,8 +13,8 @@
 <body>
 <header class="header">
     <div class="header__content container">
-        <a href="">
-            <img src="img/logo.png" alt="logo" height="80px">
+        <a href="index.html">
+            <img src="img/logo.png" alt="logo" style="height: 80px">
         </a>
         <nav>
             <ul>
@@ -37,38 +37,96 @@
         </nav>
         <div class="search">
             <input type="text" class="search-input" placeholder="Search...">
-            <a href="">
+            <a href="cart.html" class="cart-btn">
+                <span class="icon">
+                    <img src="img/cart2.png" alt="" width="30">
+                </span>
                 CART
             </a>
         </div>
+        <nav class="burger">
+            <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox">
+
+                <!--
+                Some spans to act as a hamburger.
+
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+
+                <div id="menu">
+                    <div class="container">
+                        <div><a href="index.html">Home</a></div>
+                        <div><a href="aboutus.html">About us</a></div>
+                        <div><a href="contacts.html">Contacts</a></div>
+                        <div><a href="sale.html">Sale</a></div>
+                        <div><a href="clothes.html">Clothes</a></div>
+                        <div>
+                            <a href="cart.html" class="cart-btn" style="justify-content: flex-start">
+                                <img src="img/cart2.png" alt="" width="30">
+                                CART
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
 </header>
+
 <section class="text container">
-    <h1>Kink.uz</h1>
-    <p>Is an Uzbek shop that sells sneakers and streetwear clothes was founded in 2010</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis distinctio id provident quia quibusdam
-        ratione tempore. A aperiam doloremque esse impedit, laboriosam quam quis repellendus tempore veniam vitae!
-        Ipsam.</p> <br> <br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis distinctio id provident quia quibusdam
-        ratione tempore. A aperiam doloremque esse impedit, laboriosam quam quis repellendus tempore veniam vitae!
-        Ipsam.</p> <br> <br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis distinctio id provident quia quibusdam
-        ratione tempore. A aperiam doloremque esse impedit, laboriosam quam quis repellendus tempore veniam vitae!
-        Ipsam.</p>
+    <h1 style="font-family: MBL,sans-serif">Kink.uz</h1>
+    <p>Is an Uzbek shop that sells sneakers and streetwear clothes since 2010</p> <br>
+    <h2 style="font-family: MBL, sans-serif">Our mission</h2>
+    <p>BRING <br>
+        INSPIRATION <br>
+        AND <br>
+        INNOVATION <br>
+        TO <br>
+        EVERY <br>
+        ATHLETE* <br>
+        IN <br>
+        UZBEKISTAN <br>
+        *If you have a body, you are an athlete
+    </p> <br>
+    <h2 style="font-family: MBL, sans-serif">
+        - Streetwear that you can be proud of
+    </h2>
+
     <br> <br>
     <div class="row">
-        <img src="img/shop.webp" alt="" width="50%">
-        <img src="img/shop2.jpg" alt="" width="50%">
+        <img src="img/shop.webp" alt="photo" style="width: 50%">
+        <img src="img/shop2.jpg" alt="photo" style="width: 50%">
     </div>
 
 
 </section>
 <footer class="footer">
     <div class="footer__content container">
-        <a href="">
-            <img src="img/logo.png" alt="" height="225px">
+        <a href="index.html">
+            <img src="img/logo.png" alt="" style="height: 225px">
         </a>
         <div class="footer_links">
+            <div>
+                <h4>Contact us at</h4>
+                <ul>
+                    <li><a href="tel:+998909248761">Phone: +998909248761</a></li>
+                    <li><a href="mailto:kink.uz@gmail.com">Email: kink.uz@gmail.com</a></li>
+                </ul>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About us</a></li>
@@ -79,11 +137,14 @@
                 <li><a href="sale.html">Sale</a></li>
                 <li><a href="clothes.html">Clothes</a></li>
             </ul>
-            <p>Kink в соц-сетях</p>
-            <ul>
-                <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
-                <li><a href=""><i class="fa-brands fa-telegram"></i>Telegram</a></li>
-            </ul>
+            <div>
+                <h4>Kink.uz socials</h4>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    <li><a href=""><i class="fa-brands fa-telegram"></i>Telegram</a></li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </footer>

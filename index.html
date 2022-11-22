@@ -13,8 +13,8 @@
 <body>
 <header class="header">
     <div class="header__content container">
-        <a href="">
-            <img src="img/logo.png" alt="logo" height="80px">
+        <a href="index.html">
+            <img src="img/logo.png" alt="logo" style="height: 80px">
         </a>
         <nav>
             <ul>
@@ -37,72 +37,119 @@
         </nav>
         <div class="search">
             <input type="text" class="search-input" placeholder="Search...">
-            <a href="">
+            <a href="cart.html" class="cart-btn">
+                <span class="icon">
+                    <img src="img/cart2.png" alt="" width="30">
+                </span>
                 CART
             </a>
         </div>
+        <nav class="burger">
+            <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox">
+
+                <!--
+                Some spans to act as a hamburger.
+
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+
+                <div id="menu">
+                    <div class="container">
+                        <div><a href="index.html">Home</a></div>
+                        <div><a href="aboutus.html">About us</a></div>
+                        <div><a href="contacts.html">Contacts</a></div>
+                        <div><a href="sale.html">Sale</a></div>
+                        <div><a href="clothes.html">Clothes</a></div>
+                        <div>
+                            <a href="cart.html" class="cart-btn" style="justify-content: flex-start">
+                                <img src="img/cart2.png" alt="" width="30">
+                                CART
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
 </header>
-<section class="image-section container">
+<div class="image-section container">
     <div class="left">
-        <a class="image-h1" href="#">Sneakers</a>
-        <img src="img/header1.jpg" height="100%" width="100%" alt="">
+        <a class="image-h1" href="#sneakers">Sneakers</a>
+        <img src="img/header1.jpg" style="height: 100%;width: 100%" alt="">
 
     </div>
     <div class="right">
-        <a class="image-h1" href="#">Clothes</a>
-        <img src="img/header2.jpg" height="100%" width="100%" alt="">
+        <a class="image-h1" href="#clothes">Clothes</a>
+        <img src="img/header2.jpg" style="height: 100%;width: 100%" alt="">
     </div>
-</section>
+</div>
 <section class="products container">
     <aside class="filters">
-        <h2>Filters</h2>
-        <h4>Brand</h4>
-        <ul>
-            <li>
-                <input type="checkbox" id="product1" name="product1" value="Nike">
-                <label for="product1"> Nike</label><br>
-            </li>
-            <li>
-                <input type="checkbox" id="product2" name="product1" value="Nike">
-                <label for="product2"> Adidas</label><br>
-            </li>
-            <li>
-                <input type="checkbox" id="product3" name="product1" value="Nike">
-                <label for="product3"> Timberland</label><br>
-            </li>
-            <li>
-                <input type="checkbox" id="product4" name="product1" value="Nike">
-                <label for="product4"> Vans</label><br>
-            </li>
-            <li>
-                <input type="checkbox" id="product5" name="product1" value="Nike">
-                <label for="product5"> New Balance</label><br>
-            </li>
-        </ul>
-        <h4>Clothes</h4>
-        <ul>
-            <li>
-                <input type="checkbox" id="clothes1" name="product1" value="Nike">
-                <label for="product1"> Bomber</label><br>
-            </li>
-            <li>
-                <input type="checkbox" id="clothes2" name="product1" value="Nike">
-                <label for="product2"> Hoodie</label><br>
-            </li>
-            <li>
-                <input type="checkbox" id="clothes3" name="product1" value="Nike">
-                <label for="product3"> Jeans</label><br>
-            </li>
-            <li>
-                <input type="checkbox" id="clothes4" name="product1" value="Nike">
-                <label for="product4"> Caps</label><br>
-            </li>
-            <li>
-                <input type="checkbox" id="clothes5" name="product1" value="Nike">
-                <label for="product5"> New Balance</label><br>
-            </li>
-        </ul>
+        <div>
+            <h2>Filters</h2>
+            <h4>Brand</h4>
+            <ul>
+                <li>
+                    <input type="checkbox" id="product1" name="product1" value="Nike">
+                    <label for="product1"> Nike</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" id="product2" name="product1" value="Nike">
+                    <label for="product2"> Adidas</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" id="product3" name="product1" value="Nike">
+                    <label for="product3"> Timberland</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" id="product4" name="product1" value="Nike">
+                    <label for="product4"> Vans</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" id="product5" name="product1" value="Nike">
+                    <label for="product5"> New Balance</label><br>
+                </li>
+            </ul>
+        </div>
+        <div><h4>Clothes</h4>
+            <ul>
+                <li>
+                    <input type="checkbox" id="clothes1" name="product1" value="Nike">
+                    <label for="product1"> Bomber</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" id="clothes2" name="product1" value="Nike">
+                    <label for="product2"> Hoodie</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" id="clothes3" name="product1" value="Nike">
+                    <label for="product3"> Jeans</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" id="clothes4" name="product1" value="Nike">
+                    <label for="product4"> Caps</label><br>
+                </li>
+                <li>
+                    <input type="checkbox" id="clothes5" name="product1" value="Nike">
+                    <label for="product5"> New Balance</label><br>
+                </li>
+            </ul>
+        </div>
+
     </aside>
     <div class="products-side">
         <div class="product-title">
@@ -122,61 +169,61 @@
         </div>
 
 
-        <div class="product-list">
+        <div class="product-list" id="sneakers">
             <div class="card">
                 <img src="img/product1.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>Nike SB Dunk</b></h4>
+                    <p>80$</p>
                 </div>
             </div>
             <div class="card">
                 <img src="img/product2.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>Adidas Yeezy</b></h4>
+                    <p>50$</p>
                 </div>
             </div>
             <div class="card">
                 <img src="img/product3.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>Nike AJ High</b></h4>
+                    <p>90$</p>
                 </div>
             </div>
             <div class="card">
                 <img src="img/product4.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>Nike SB Dunk Travis Scott</b></h4>
+                    <p>120$</p>
                 </div>
             </div>
             <div class="card">
                 <img src="img/product5.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>Timberland</b></h4>
+                    <p>110$</p>
                 </div>
             </div>
             <div class="card">
                 <img src="img/product6.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>Vans</b></h4>
+                    <p>50$</p>
                 </div>
             </div>
             <div class="card">
                 <img src="img/product7.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>Vans</b></h4>
+                    <p>55$</p>
                 </div>
             </div>
             <div class="card">
                 <img src="img/product8.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>Vans</b></h4>
+                    <p>53$</p>
                 </div>
             </div>
             <div class="card">
@@ -189,61 +236,73 @@
             <div class="card">
                 <img src="img/clothes3.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>Timberland</b></h4>
+                    <p>110$</p>
                 </div>
             </div>
         </div>
         <h2>Clothes</h2>
-        <div class="product-list">
+        <div class="product-list" id="clothes">
             <div class="card2">
                 <img src="img/clothes1.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>Jeans Jacket</b></h4>
+                    <p>60$</p>
                 </div>
             </div>
             <div class="card2">
                 <img src="img/clothes2.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>Essentials bomber</b></h4>
+                    <p>60$</p>
                 </div>
             </div>
 
             <div class="card2">
                 <img src="img/clothes4.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>Bomber</b></h4>
+                    <p>55$</p>
                 </div>
             </div>
             <div class="card2">
                 <img src="img/clothes5.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>The North Face Jacket</b></h4>
+                    <p>120$</p>
                 </div>
             </div>
             <div class="card2">
                 <img src="img/clothes6.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>Cargo pants</b></h4>
+                    <p>30$</p>
                 </div>
             </div>
             <div class="card2">
                 <img src="img/clothes7.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>Benim hats</b></h4>
+                    <p>15$</p>
                 </div>
             </div>
             <div class="card2">
                 <img src="img/clothes8.jpg" alt="Avatar" style="width:100%">
                 <div class="card-text">
-                    <h4><b>John Doe</b></h4>
-                    <p>Architect & Engineer</p>
+                    <h4><b>Jogger pants</b></h4>
+                    <p>23$</p>
+                </div>
+            </div>
+            <div class="card2">
+                <a href="clothes.html" class="gray">
+                    <div class="gray-bg">
+                        <span class="icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </span>
+                    </div>
+                </a>
+                <div class="card-text">
+                    <h4>Show more...</h4>
                 </div>
             </div>
         </div>
@@ -251,10 +310,17 @@
 </section>
 <footer class="footer">
     <div class="footer__content container">
-        <a href="">
-            <img src="img/logo.png" alt="" height="225px">
+        <a href="index.html">
+            <img src="img/logo.png" alt="logo" height="225">
         </a>
         <div class="footer_links">
+            <div>
+                <h4>Contact us at</h4>
+                <ul>
+                    <li><a href="tel:+998909248761">Phone: +998909248761</a></li>
+                    <li><a href="mailto:kink.uz@gmail.com">Email: kink.uz@gmail.com</a></li>
+                </ul>
+            </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About us</a></li>
@@ -265,11 +331,14 @@
                 <li><a href="sale.html">Sale</a></li>
                 <li><a href="clothes.html">Clothes</a></li>
             </ul>
-            <ul>
-                <p>Kink в соц-сетях</p>
-                <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
-                <li><a href=""><i class="fa-brands fa-telegram"></i>Telegram</a></li>
-            </ul>
+            <div>
+                <h4>Kink.uz socials</h4>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    <li><a href=""><i class="fa-brands fa-telegram"></i>Telegram</a></li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </footer>

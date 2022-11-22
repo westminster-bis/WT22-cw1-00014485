@@ -21,3 +21,9 @@
     src: url(../fonts/Montserrat-Light.ttf) format("truetype");
     font-weight: 200;
 }
+
+@font-face {
+    font-family: MBL;
+    src: url(../fonts/Montserrat-Black.ttf) format("truetype");
+    font-weight: 900;
+}
