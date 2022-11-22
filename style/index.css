@@ -225,6 +225,7 @@ select {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding-bottom: 20px !important;
 }
 
 .footer_links {
@@ -507,4 +508,12 @@ select {
  */
 #menuToggle input:checked ~ div {
     transform: none;
+}
+
+.footer__basement p {
+    color: white;
+}
+
+.footer__basement {
+    padding: 20px 0 40px !important;
 }
